@@ -16,8 +16,10 @@ Clemntius Clemensius Kremasas Gugis Plaudertasches Vorschläge:
 
 
 Also,
-zu der Gliederung bzw. so manche Sachen, die wir in die Website rein tun könnten:
+zu der Gliederung bzw. so manche Sachen, die wir in die Website rein tun:
 
+- Geschichte
+  - Entstehung
 - Derzeitiger Stand
   - Wo wird es verwendet
   - Wie funste der Spaß
@@ -25,6 +27,7 @@ zu der Gliederung bzw. so manche Sachen, die wir in die Website rein tun könnte
         - Über die Leisung vllt
         - Die Bildschrime die vor deiner Fresse hängen, wie das geht
         - Die Programmierung von Spielen oder Krankenhauszeug
+        - Wie realistisch wird es noch werden?
 - Was ist so in der Zukunft, Wie könnte es sich entwickeln (der größte Punkt)
 - 
   - 
