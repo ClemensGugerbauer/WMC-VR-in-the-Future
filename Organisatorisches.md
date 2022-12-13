@@ -8,6 +8,25 @@ Konstis Vorschläge:
 Eigene Datein für die Personen, damit wir uns gegenseitig die Datein nicht überschreiben. Wir können unseren Shit den wir haben einfach in die Datein schreiben und danach einheitlich in eine Große Datei geben.
 
 Felixisuses Vorschläge:
-VR Shooter in Amstetten. Wir können über die umgebauten VR Brillen schreiben. Sie sind mit Kameras ausgestattet, welche auf dem Boden Punkte aufnehmen. Das Programm kann sich dadurch orientieren und weiß wo sich welche Person gerade befindet. In der Zukunft könnte man dies noch verbessern, sodass die VR Brille und das Programm die perfekten Bewegungen analysieren und berechnen kann.
+VR Shooter in Amstetten. Wir können über die umgebauten VR Brillen schreiben. Sie sind mit Kameras ausgestattet, welche auf dem Boden Punkte aufnehmen. Das Programm kann sich dadurch orientieren und weiß wo sich welche Person gerade befindet.
 
 Clemntius Clemensius Kremasas Gugis Plaudertasches Vorschläge:
+
+
+
+
+Also,
+zu der Gliederung bzw. so manche Sachen, die wir in die Website rein tun:
+
+- Geschichte
+  - Entstehung
+- Derzeitiger Stand
+  - Wo wird es verwendet
+  - Wie funste der Spaß
+        - Technische Daten
+        - Über die Leisung vllt
+        - Die Bildschrime die vor deiner Fresse hängen, wie das geht
+        - Die Programmierung von Spielen oder Krankenhauszeug
+- Was ist so in der Zukunft, Wie könnte es sich entwickeln (der größte Punkt)
+- 
+  - 
