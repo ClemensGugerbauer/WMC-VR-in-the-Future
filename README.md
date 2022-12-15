@@ -14,7 +14,9 @@
 Different „compartments“ About: 
 - Tech, will feature some graphics and "timelines" showing how VR-Goggles work
 - Possibilities in the future
-- different buttons on the side allowing you to switch to that article
+- different buttons on the side allowing you to switch to certain parts inside the article you´re reading.
+- A bar at the top displaying some elements.
+- Little buttons that can "collapse" and "unfold" the bar on the side and the one up top.
 6. Technical details: 
 - Inside the text you will be able to click on certain words, to find out more about them.
 - A bar at the top showing you where on the website you currently are, and where you can go.
