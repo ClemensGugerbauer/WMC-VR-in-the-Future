@@ -1,7 +1,7 @@
 # WMC-VR-in-the-Future
 
 1. Projekt Purpose: 
-- Create a Website about VR in our future. In that website we will describe what will be in the future and how VR works at the moment. 
+- Create a Website about VR in our future. In that website we will describe what will be possible in the future and how VR works at the moment. 
 2. Target user:
 - Basically, anyone who wants to know about VR and its possibilities, ranging from normal people to big companys. 
 3. Team members:
