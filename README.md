@@ -4,7 +4,7 @@ Die Gruppe besteht aus Konstantin Wetscher, Felix Kohlböck, Clemens Gugerbauer
 Wir schreiben eine Website über Virtual Reality, wie es sich entwickeln könnte, was für einen Nutzen man draus ziehen könnte, usw. weiteres ist noch nicht geplant.
 
 1. Projekt Purpose: 
-Create a Website about VR in our future. In that website we will describe what possibilities are possible in the future and how VR works at the moment.
+Create a Website about VR in our future. In that website we will describe what will be in the future and how VR works at the moment.
 2. Target user:
 Basically, anyone who wants to know about VR and its possibilities
 3. Team members:
