@@ -31,3 +31,14 @@ zu der Gliederung bzw. so manche Sachen, die wir in die Website rein tun:
 - Was ist so in der Zukunft, Wie könnte es sich entwickeln (der größte Punkt)
 - 
   - 
+
+
+Info ihr Kekse:
+So ne Startseite, wo unten unsere Namen stehen 
+
+in den Artikel drinnen: 
+Bei den Technischen Daten, wo beschrieben wird wie eine VR funktioniert mit Bildern und so.
+
+Startseite                Felix
+Technische Daten          Konsti
+Vr in the furture         Clemens
