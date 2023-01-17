@@ -15,6 +15,15 @@ Clemntius Clemensius Kremasas Gugis Plaudertasches Vorschläge:
 
 
 
+
+WICHTIG!!!!
+:
+WIR MÜSSEN SAGEN WAS STATIC UND DYNAMIC IST
+
+
+
+
+
 Also,
 zu der Gliederung bzw. so manche Sachen, die wir in die Website rein tun:
 
