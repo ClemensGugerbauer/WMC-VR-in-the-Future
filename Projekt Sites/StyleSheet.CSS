@@ -1,3 +1,6 @@
-button {
-    margin: 2%;
+
+#info-box {
+    border: 2px solid;
+    border-style: hidden;
+    background-color: rgba(70, 70, 70, 0.44);
 }
