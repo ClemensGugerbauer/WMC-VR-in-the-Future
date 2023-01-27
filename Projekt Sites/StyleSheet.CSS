@@ -1,11 +1,17 @@
 
 #info-box {
-    border: 1px solid;
-    background-image: url('../Pictures/Info-Box\ Background.jpg');background-repeat: no-repeat; background-size:cover;
+    border: 1px hidden;
+    background: linear-gradient(to right, rgba(46, 46, 203, 0) , rgba(0, 0, 0, 0.808));
+    background-image: url('../Pictures/Info-Box-Background2.jpg');background-repeat: no-repeat; background-size:cover;
+    padding: 6%;
 }
 #info-text {
     border: 0px solid;
     border-style: hidden;
+    background-color: rgba(0, 0, 0, 0.345);
+    background-size: contain;
+    padding-bottom: 4%;
+    padding-top: 4%;
 }
 .video-container{
     width: 100vw;
