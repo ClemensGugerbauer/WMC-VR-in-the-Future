@@ -1,6 +1,12 @@
 
 #info-box {
-    border: 2px solid;
+    border: 0px solid;
     border-style: hidden;
-    background-color: rgba(70, 70, 70, 0.44);
+    background-color: rgb(70, 70, 70);
+    margin: 0%;
+}
+#info-text {
+    border: 0px solid;
+    border-style: hidden;
+    background-color: rgba(15, 15, 15, 0.438);
 }
