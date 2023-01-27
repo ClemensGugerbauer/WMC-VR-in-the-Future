@@ -24,11 +24,11 @@
   <body style="background-image: url('../Pictures/Testpicture.jpg'); background-repeat: no-repeat; background-size:cover;">
  
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: rgb(19, 19, 19);background-image: linear-gradient(to right, rgb(98, 85, 219) , rgba(33, 1, 82, 0.347));border-radius: 0%; margin-bottom: 0%;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top" style="background-color: rgb(19, 19, 19);background-image: linear-gradient(to right, rgb(98, 85, 219) , rgba(33, 1, 82, 0.347));border-radius: 0%; margin-bottom: 0%;position: -webkit-sticky;">
      <a cass="navbar-brand" href="#"#>
-      <img src="../../../Pictures\vrinthefuturelogo.png" alt="" height="140" width="250" >
-      <a class="nav-item nav-link active" href="#" style="font-size: 30px; margin-right: 3%; margin-left: 3%; color: rgb(46, 23, 129);">Home<span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" onclick="window.location.href = 'AboutUs/aboutUs.html';" style="font-size: 30px;color: rgb(46, 23, 129);">Über uns</a>
+      <img src="../../../Pictures\vrinthefuturelogo.png" alt="" height="130" width="220" >
+      <a class="nav-item nav-link active" href="#" style="font-size: 30px; margin-right: 3%; margin-left: 3%; color: rgb(182, 162, 255);">Home<span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" onclick="window.location.href = 'AboutUs/aboutUs.html';" style="font-size: 30px;color: rgb(182, 162, 255);">Über uns</a>
      </a>
     </nav>
     
@@ -65,16 +65,37 @@
       </div>
     </div>
 
+    <div id="history-box">
+      <div id="history-content">
+        <h1 style="font-size: 40px; font-family: 'Impact'; color: white; text-align:center;">Geschichte/Entstehung</h1>
+        <p style="font-size: 23px; font-family: 'Cascadia Code'; color: white; text-align:center;">
+          Lorem ipsum dolor sit amet, consetetur sadipscing, <br>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed<br>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam <br>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr,<br>
+          Lorem ipsum dolor sit
+        </p>
+        <a onclick="window.location.href = 'history.html';" class="btn btn-dark" role="button" aria-pressed="true">Mehr dazu</a>
+      </div>
+    </div>
+    <div id="development-box">
+      <div id="development-content">
+        <h1 style="font-size: 40px; font-family: 'Impact'; color: white; text-align:center;">Zukünftige Entwicklungen</h1>
+        <p style="font-size: 23px; font-family: 'Cascadia Code'; color: white; text-align:center;">
+          Lorem ipsum dolor sit amet, consetetur sadipscing, <br>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed<br>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam <br>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr,<br>
+          Lorem ipsum dolor sit
+        </p>
+        <a onclick="window.location.href = 'development.html';" class="btn btn-dark" role="button" aria-pressed="true">Mehr dazu</a>
+      </div>
+    </div>
+
     <div class="list-group" style="opacity: 0.5;">
       
-      <button type="button" class="list-group-item list-group-item-action" onclick="window.location.href = 'history.html';">
-        <h1 class="text-center"> Geschichte/Entstehung </h1></button>
       <button type="button" class="list-group-item list-group-item-action" onclick="window.location.href = 'benefits.html';">
         <h1 class="text-center"> Welchen Nutzen kann man daraus ziehen?</h1></button>
-      <button type="button" class="list-group-item list-group-item-action" onclick="window.location.href = 'development.html';">
-        <h1 class="text-center"> Wie könnte es sich weiterentwickeln? </h1></button>  
-      <button type="button" class="list-group-item list-group-item-action" onclick="window.location.href = 'AboutUs/aboutUs.html';">
-        <h1 class="text-center">Über Uns</h1></button>
     </div>
     
   </body>
