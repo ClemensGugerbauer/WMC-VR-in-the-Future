@@ -24,7 +24,7 @@
   <body style="background-image: url('../Pictures/Testpicture.jpg'); background-repeat: no-repeat; background-size:cover;">
  
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: rgb(19, 19, 19);background-image: linear-gradient(to right, rgb(98, 85, 219) , rgba(0, 0, 0, 0.541));border-radius: 0%; margin-bottom: 0%;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: rgb(19, 19, 19);background-image: linear-gradient(to right, rgb(98, 85, 219) , rgba(33, 1, 82, 0.347));border-radius: 0%; margin-bottom: 0%;">
      <a cass="navbar-brand" href="#"#>
       <img src="../../../Pictures\vrinthefuturelogo.png" alt="" height="140" width="250" >
       <a class="nav-item nav-link active" href="#" style="font-size: 30px; margin-right: 3%; margin-left: 3%; color: rgb(46, 23, 129);">Home<span class="sr-only">(current)</span></a>
@@ -34,8 +34,11 @@
     
 
     <div id="info-box">
+      <video id="background-video" autoplay loop muted poster="..\Pictures\My Movie.mp4">
+        <source src="..\Pictures\My Movie.mp4" type="video/mp4">
+        </video>
       <div id="info-text">
-        <p style="font-size: 20px; font-family: 'Cascadia Code'; color: white; text-align: center;">
+        <p style="font-size: 23px; font-family: 'Cascadia Code'; color: white; text-align: center;">
           VR-Brillen liegen absolut im Trend. <br>
           Mehr Hersteller kommen mit eigenen Modellen auf den Markt.<br>
           Bisher werden sie von Endverbrauchern in erster Linie fürs Gaming genutzt,<br>
@@ -48,9 +51,22 @@
       </div>
     </div>
     
+    <div id="technical-information">
+      <div id="technical-content">
+        <h1 style="font-size: 40px; font-family: 'Impact'; color: white; text-align:center;">Technische Daten</h1>
+        <p style="font-size: 23px; font-family: 'Cascadia Code'; color: white; text-align:center;">
+          Virtual Reality Headset-Geräte verwenden Stereoprojektion, <br>
+          um immersive Erfahrungen in virtuellen Welten zu bieten. <br>
+          Sie interagieren mit speziellen Eingabegeräten und können eigenständig <br>
+          oder PC-abhängig sein. Einige beinhalten Force-Feedback <br>
+          für realistische Simulationen.
+        </p>
+        <a onclick="window.location.href = 'technicalDetails.html';" class="btn btn-dark" role="button" aria-pressed="true">Mehr dazu</a>
+      </div>
+    </div>
+
     <div class="list-group" style="opacity: 0.5;">
-      <button type="button" class="list-group-item list-group-item-action" onclick="window.location.href = 'technicalDetails.html';">
-        <h1 class="text-center"> Technische Daten </h1></button>
+      
       <button type="button" class="list-group-item list-group-item-action" onclick="window.location.href = 'history.html';">
         <h1 class="text-center"> Geschichte/Entstehung </h1></button>
       <button type="button" class="list-group-item list-group-item-action" onclick="window.location.href = 'benefits.html';">

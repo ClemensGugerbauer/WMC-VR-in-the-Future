@@ -1,17 +1,60 @@
-
+.btn {
+    border-radius: 0%; 
+    color: rgb(217, 217, 217);
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 150%;
+       border: 4px solid rgb(24, 24, 24);
+        background-color: rgb(24, 24, 24);
+        transition: 0.2s;
+}
+.btn:hover{
+    border-radius: 0%; 
+    color: rgb(217, 217, 217);
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 160%;
+       border: 4px solid rgb(71, 0, 115);
+        background-color: rgb(71, 0, 115);
+        transition: 0.2s;
+}
 #info-box {
     border: 1px hidden;
     background: linear-gradient(to right, rgba(46, 46, 203, 0) , rgba(0, 0, 0, 0.808));
-    background-image: url('../Pictures/Info-Box-Background2.jpg');background-repeat: no-repeat; background-size:cover;
     padding: 6%;
 }
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 30;
+    z-index: -1;
+  }
 #info-text {
     border: 0px solid;
     border-style: hidden;
-    background-color: rgba(0, 0, 0, 0.345);
+    background-color: rgba(0, 0, 0, 0.4);
     background-size: contain;
     padding-bottom: 4%;
     padding-top: 4%;
+}
+#technical-information {
+    border-top: 2px solid white;
+    background-image: url('../Pictures/Hardware.jpg');background-repeat: no-repeat; background-size:cover;
+    padding: 19%;
+}
+#technical-content {
+    position:absolute;
+    right: 0;
+    border: 0px solid;
+    border-style: hidden;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.305);
+    background-size: contain;
+    padding: 20px;
+    
 }
 .video-container{
     width: 100vw;
