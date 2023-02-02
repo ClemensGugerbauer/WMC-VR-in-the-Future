@@ -36,7 +36,7 @@
     padding: 1.5%;
     padding-left: 20%;
     padding-right: 20%;
-    margin-top: 7%;
+    margin-top: 0%;
     padding-top: 13%;
 }
 #background-video {
@@ -55,6 +55,8 @@
     border-style: hidden;
     background-color: rgba(0, 0, 0, 0.595);
     background-size: contain;
+    padding-left: 5%;
+    padding-right: 5%;
     padding-bottom: 4%;
     padding-top: 4%;
 }
