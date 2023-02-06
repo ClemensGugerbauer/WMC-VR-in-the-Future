@@ -124,7 +124,7 @@
     background-image: url('../Pictures/history.jpg');background-repeat: no-repeat; background-size:cover;
     padding: 10%;
 }   
-#history-content{
+#history-content {
     position:-webkit-sticky;
     right: 0;
     margin-bottom: 1px;
