@@ -97,7 +97,10 @@
         transition: 0.2s;
 }
 
-
+#benefitsh1{
+    color: rgba(0, 0, 0, 0.415);
+    text-decoration: underline;
+}
 #info-box {
     position: -webkit-sticky;
     border: 1px hidden;
