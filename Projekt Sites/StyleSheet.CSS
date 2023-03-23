@@ -14,10 +14,12 @@
     src: url('../fontStyle/fz-shion-regular/Shion-Regular.otf');
     font-family: 'AboutUsFontStyle';
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> cb4d017687d7cbea74a21f5b31a645ec39d0ed83
+.navbar {
+    transition: transform 0.5s ease-out;
+}
+.navbar-hidden {
+    transform: translateY(-100%);
+}
 .btn {
   padding: 0.6em 2em;
   border: none;
