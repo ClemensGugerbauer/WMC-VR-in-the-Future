@@ -14,9 +14,6 @@
     src: url('../fontStyle/fz-shion-regular/Shion-Regular.otf');
     font-family: 'AboutUsFontStyle';
 }
-.p:hover{
-    text-decoration: underline;
-}
 .btn {
     border-radius: 0%; 
     color: rgb(217, 217, 217);
