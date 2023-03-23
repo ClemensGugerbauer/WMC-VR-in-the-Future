@@ -18,8 +18,8 @@
         <link rel="icon"  href="../Pictures/Favicon.png">
 
         <script>
-            function scrollToElement() {
-                let element = document.getElementById("scrollToElement");
+            function scrollToElement(section) {
+                let element = document.getElementById(section);
                 element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
             }
             function setNavbarPosition() {
@@ -37,95 +37,120 @@
 
     </head>
     <body style="background-color: rgb(232, 232, 232);" onload="setNavbarPosition()">
-        <div>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" style="background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);border-radius: 0%; margin-bottom: 0%; position: -webkit-sticky;top:0; animation-name: rainbow; animation: rainbow 15s ease infinite; background-size: 400% 400%;box-shadow:0px 10px 5px rgba(0, 0, 0, 0.461); z-index: 2;">
-                    <img src="../Pictures/vrinthefuturelogo.png" alt="" height="130" width="220" style="margin-left: 30px;" >
-                    <a class="nav-item nav-link" onclick="window.location.href = 'Start_Page.html';" id="navbarStyle">Home<span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" onclick="window.location.href = 'technicalDetails.html';" id="navbarStyle">Technische Daten</a>
-                    <a class="nav-item nav-link" onclick="window.location.href = 'history.html';" id="navbarStyle">Geschichte</a>
-                    <a class="nav-item nav-link" onclick="window.location.href = 'development.html';" id="navbarStyle">Entwicklungen</a>
-                    <a class="nav-item nav-link" onclick="window.location.href = 'benefits.html';" id="navbarStyle"">Vorteile</a>
-                    <a class="nav-item nav-link" onclick="window.location.href = 'aboutUs.html';" id="navbarStyle">Über uns</a>
-                    </a>
-            
-                </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" style="background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);border-radius: 0%; margin-bottom: 0%; position: -webkit-sticky;top:0; animation-name: rainbow; animation: rainbow 15s ease infinite; background-size: 400% 400%;box-shadow:0px 10px 5px rgba(0, 0, 0, 0.461); z-index: 2;">
+                <img src="../Pictures/vrinthefuturelogo.png" alt="" height="130" width="220" style="margin-left: 30px;" >
+                <a class="nav-item nav-link" onclick="window.location.href = 'Start_Page.html';" id="navbarStyle">Home<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" onclick="window.location.href = 'technicalDetails.html';" id="navbarStyle">Technische Daten</a>
+                <a class="nav-item nav-link" onclick="window.location.href = 'history.html';" id="navbarStyle">Geschichte</a>
+                <a class="nav-item nav-link" onclick="window.location.href = 'development.html';" id="navbarStyle">Entwicklungen</a>
+                <a class="nav-item nav-link" onclick="window.location.href = 'benefits.html';" id="navbarStyle"">Vorteile</a>
+                <a class="nav-item nav-link" onclick="window.location.href = 'aboutUs.html';" id="navbarStyle">Über uns</a>
+                </a>
+        
+            </nav>
+        </div>
+
+        <div style="margin-top: 3%;">
+            <div style="float: right;">
+                <div style="margin-left: -60%;">
+                    <div style="border-left-style: solid;  border-color: rgb(159, 159, 159);">
+                        <div style="padding: 10%;">
+                            <div style="font-family: AboutUsFontStyle; font-size: 125%; line-height: 250%;">
+                                <a onclick="scrollToElement('SectionDetails')">Ausführliches</br></a>
+                                <a onclick="scrollToElement('SectionInterestiongFacts')">Interessante Fakten</br></a>
+                                <a onclick="scrollToElement()">Komfort</br></a>
+                                <a onclick="scrollToElement('SectionInsanePossibilitys')">Krasse Möglichkeiten</br></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
 
-            <div>
-                <div style="float: right;">
-                    <div style="margin-left: -60%;">
-                        <div style="border-left-style: solid;  border-color: rgb(159, 159, 159);">
-                            <div style="padding: 10%;">
-                                <div style="font-family: AboutUsFontStyle; font-size: 125%; line-height: 250%;">
-                                    <a onclick="scrollToElement()">Ausführliches</br></a>
-                                    <a onclick="scrollToElement()">Interessante Fakten</br></a>
-                                    <a onclick="scrollToElement()">Komfort</br></a>
-                                    <a onclick="scrollToElement()">Krasse Möglichkeiten</br></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div style="background-image: radial-gradient(rgba(174, 174, 174, 0.91), rgb(232, 232, 232));">
-                    <div style="margin: 3%; margin-right: 30%; margin-left: 10%;">
-                        <div style="border-style: none;">
-                            <div style="padding: 3%;">
-                                <div style="line-height: 200%; font-size: 145%;">
-                                    <p>
-                                        Virtual Reality (VR) hat in den letzten Jahren eine rasante Entwicklung
-                                        durchgemacht und eröffnet neue Möglichkeiten in vielen Bereichen,
-                                        einschließlich Bildung, Unterhaltung und Medizin. VR bietet ein immersives Erlebnis,
-                                        das es den Benutzern ermöglicht, in eine virtuelle Welt einzutauchen
-                                        und sie auf eine Weise zu erleben, die mit der realen Welt nicht möglich ist.
-                                        In der Zukunft werden VR-Technologien noch weiter verbessert werden,
-                                        was es Benutzern ermöglichen wird, noch realistischere und intuitivere
-                                        virtuelle Welten zu erleben. Die Vorteile von VR reichen von einer verbesserten
-                                        Lernumgebung bis hin zu einer neuen Art der Unterhaltung und bieten somit eine Vielzahl
-                                        von Anwendungen für verschiedene Branchen.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
-                <div id="scrollToElement" style="margin: 3%; margin-right: 15%; margin-left: 10%;">
+        <div style="background-image: radial-gradient(rgba(180, 180, 180, 0.91), rgb(232, 232, 232));">
+            <div style="margin: 3%; margin-right: 30%; margin-left: 10%;">
+                <div style="border-style: none;">
                     <div style="padding: 3%;">
-                        <h1 id="benefitsh1">Ausführliches</h1>
-                        <div style="margin-left: 80%;">
-                            <img src="../Pictures/VrSurgery.jpg" style="float: right; border-radius: 1%;" width="500" alt="Bild konnte nicht geladen werden.">
+                        <div style="line-height: 200%; font-size: 145%;">
+                            <p>
+                                Virtual Reality (VR) hat in den letzten Jahren eine rasante Entwicklung
+                                durchgemacht und eröffnet neue Möglichkeiten in vielen Bereichen,
+                                einschließlich Bildung, Unterhaltung und Medizin. VR bietet ein immersives Erlebnis,
+                                das es den Benutzern ermöglicht, in eine virtuelle Welt einzutauchen
+                                und sie auf eine Weise zu erleben, die mit der realen Welt nicht möglich ist.
+                                In der Zukunft werden VR-Technologien noch weiter verbessert werden,
+                                was es Benutzern ermöglichen wird, noch realistischere und intuitivere
+                                virtuelle Welten zu erleben. Die Vorteile von VR reichen von einer verbesserten
+                                Lernumgebung bis hin zu einer neuen Art der Unterhaltung und bieten somit eine Vielzahl
+                                von Anwendungen für verschiedene Branchen.
+                            </p>
                         </div>
-                        <p style="line-height: 150%; font-size: 145%;">
-                            Virtual Reality (VR) hat in den letzten Jahren enorme Fortschritte gemacht und ist dabei,
-                            sich zu einer wichtigen Technologie für die Zukunft zu entwickeln.
-                            VR bietet eine völlig neue Art der Interaktion und des Erlebens von Inhalten,
-                            indem </br> es Benutzern ermöglicht, in eine virtuelle Welt einzutauchen und sie auf
-                            eine Weise</br> zu erleben, die mit der realen Welt nicht möglich ist.
-                            Einer der wichtigsten Vorteile von VR ist, dass es eine einzigartige
-                            Möglichkeit bietet, um komplexe Konzepte zu erlernen und zu verstehen.</br>
-                            VR kann in Bereichen wie Bildung, Ausbildung und Schulung eingesetzt werden,
-                            um Schülern und Studenten ein tieferes Verständnis für bestimmte Themen zu vermitteln.
-                            Ebenso kann es auch in der medizinischen Ausbildung genutzt werden,
-                            um Ärzten das Üben von chirurgischen Eingriffen oder das Behandeln von Patienten
-                            zu ermöglichen, ohne dass es zu Risiken für echte Patienten kommt.</br>
-                            Ein weiterer Vorteil von VR ist, dass es die Möglichkeit bietet,
-                            neue Erfahrungen und Abenteuer zu erleben, ohne dass man sich aus der
-                            eigenen Wohnumgebung bewegen muss.</br>So kann man beispielsweise auf einer
-                            virtuellen Reise zu exotischen Orten reisen, einen virtuellen Zoo besuchen
-                            oder an virtuellen Konferenzen teilnehmen, um nur einige Beispiele zu nennen.
-                            Darüber hinaus bietet VR auch Vorteile für die Unterhaltungsindustrie,
-                            indem es eine neue Art der Unterhaltung bietet. VR-Spiele und -Filme bieten
-                            ein einzigartiges und immersives Erlebnis, das es den Benutzern ermöglicht,
-                            in eine andere Welt einzutauchen und Teil von ihr zu sein.
-                            In Zukunft werden VR-Technologien noch weiter verbessert werden,
-                            was es Benutzern ermöglichen wird, eine noch realistischere und
-                            intuitivere virtuelle Welt zu erleben.</br>Dies kann dazu beitragen,
-                            die Akzeptanz und Verbreitung von VR zu fördern, und es kann in vielen Bereichen,
-                            einschließlich Bildung, Unterhaltung und medizinischer Ausbildung, noch wertvollere Anwendungen finden.
-                            Zusammenfassend lässt sich sagen, dass
-                        </p>
                     </div>
+                </div>
+            </div>
+        </div>
+    
+        <div id="SectionDetails" style="margin: 3%; margin-right: 15%; margin-left: 10%;">
+            <div style="padding: 3%;">
+                <h1 id="benefitsh1">Ausführliches</h1>
+                <div style="margin-left: 80%;">
+                    <img src="../Pictures/VrSurgery.jpg" style="float: right; border-radius: 1%;" width="500" alt="Bild konnte nicht geladen werden.">
+                </div>
+                <p style="line-height: 150%; font-size: 145%;">
+                    Virtual Reality (VR) hat in den letzten Jahren enorme Fortschritte gemacht und ist dabei,
+                    sich zu einer wichtigen Technologie für die Zukunft zu entwickeln.
+                    VR bietet eine völlig neue Art der Interaktion und des Erlebens von Inhalten,
+                    indem </br> es Benutzern ermöglicht, in eine virtuelle Welt einzutauchen und sie auf
+                    eine Weise</br> zu erleben, die mit der realen Welt nicht möglich ist.
+                    Einer der wichtigsten Vorteile von VR ist, dass es eine einzigartige
+                    Möglichkeit bietet, um komplexe Konzepte zu erlernen und zu verstehen.</br>
+                    VR kann in Bereichen wie Bildung, Ausbildung und Schulung eingesetzt werden,
+                    um Schülern und Studenten ein tieferes Verständnis für bestimmte Themen zu vermitteln.
+                    Ebenso kann es auch in der medizinischen Ausbildung genutzt werden,
+                    um Ärzten das Üben von chirurgischen Eingriffen oder das Behandeln von Patienten
+                    zu ermöglichen, ohne dass es zu Risiken für echte Patienten kommt.</br>
+                    Ein weiterer Vorteil von VR ist, dass es die Möglichkeit bietet,
+                    neue Erfahrungen und Abenteuer zu erleben, ohne dass man sich aus der
+                    eigenen Wohnumgebung bewegen muss.</br>So kann man beispielsweise auf einer
+                    virtuellen Reise zu exotischen Orten reisen, einen virtuellen Zoo besuchen
+                    oder an virtuellen Konferenzen teilnehmen, um nur einige Beispiele zu nennen.
+                    Darüber hinaus bietet VR auch Vorteile für die Unterhaltungsindustrie,
+                    indem es eine neue Art der Unterhaltung bietet. VR-Spiele und -Filme bieten
+                    ein einzigartiges und immersives Erlebnis, das es den Benutzern ermöglicht,
+                    in eine andere Welt einzutauchen und Teil von ihr zu sein.
+                    In Zukunft werden VR-Technologien noch weiter verbessert werden,
+                    was es Benutzern ermöglichen wird, eine noch realistischere und
+                    intuitivere virtuelle Welt zu erleben.</br>Dies kann dazu beitragen,
+                    die Akzeptanz und Verbreitung von VR zu fördern, und es kann in vielen Bereichen,
+                    einschließlich Bildung, Unterhaltung und medizinischer Ausbildung, noch wertvollere Anwendungen finden.
+                    Zusammenfassend lässt sich sagen, dass
+                </p>
+            </div>
+        </div>
+
+        <div id="SectionInterestiongFacts" style="margin-left: 12%;">
+            <div>
+                <div>
+                    <h1 id="benefitsh1">Interessante Fakten</h1>
+                    <p>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="">
+            <div>
+                <div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="SectionInsanePossibilitys">
+            <div>
+                <div>
+                    
                 </div>
             </div>
         </div>
