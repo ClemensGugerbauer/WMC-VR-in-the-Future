@@ -13,18 +13,24 @@
         <link rel="stylesheet" href="../css/bootstrap.css">
         <link rel="stylesheet" href="../css/bootstrap.css">
         <link rel="stylesheet" href="../css/bootstrap.min.css.map">
-
-        <script src="Iquery.js"></script>
         
         <link rel="stylesheet" href="StyleSheet.CSS">
     
         <title>Über uns - VR in the Future</title>
-        <link rel="icon" href="../Pictures/Favicon.png">   
+        <link rel="icon" href="../Pictures/Favicon.png">
+
+        <style>
+            body {
+                background-color: #23d5ab;
+                background: linear-gradient(to bottom, rgba(0, 166, 166, 0) , rgba(26, 67, 212, 0.808)); background-size: cover;
+                background-size: cover;
+            }
+        </style>
 
     </head>
-    <body style="background-color: #23d5ab;">
+    <body>
 
-        <div class="wrapperFullSize">
+        <div>
             <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top" style="background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);border-radius: 0%; margin-bottom: 0%;position: -webkit-sticky;animation-name: rainbow; animation: rainbow 15s ease infinite; background-size: 400% 400%;box-shadow:0px 10px 5px rgba(0, 0, 0, 0.461); z-index: 2;">
                 <img src="../Pictures/vrinthefuturelogo.png" alt="" height="130" width="220" style="margin-left: 30px;" >
                 <a class="nav-item nav-link" onclick="window.location.href = 'Start_Page.html';" id="navbarStyle">Home<span class="sr-only">(current)</span></a>
@@ -34,48 +40,28 @@
                 <a class="nav-item nav-link" onclick="window.location.href = 'benefits.html';"id="navbarStyle"">Vorteile</a>
                 <a class="nav-item nav-link" onclick="window.location.href = 'aboutUs.html';" id="navbarStyle">Über uns</a>
                 </a>
-          
-              </nav>
+            </nav>
         
-            <div style="background: linear-gradient(to bottom, rgba(0, 166, 166, 0) , rgba(26, 67, 212, 0.808));">
-                <div class="wrapperFullSize">
-                    <div style="margin-top: 245px;">
-                        <div style="text-align: center; margin: 150px;">
-                            
-                            <button type="button" onclick="window.location.href = 'Kohlboeck.html';">
-                                <img src="../Pictures/Placeholder.png" alt="Placeholder" width="350px">
-                                <p>Felix Kohlböck</p>
-                            </button>
+            <div style="margin-top: 245px;">
+                <div style="text-align: center; margin: 150px;">
+                    
+                    <button type="button" onclick="window.location.href = 'Kohlboeck.html';">
+                        <img src="../Pictures/Placeholder.png" alt="Placeholder" width="350px">
+                        <p>Felix Kohlböck</p>
+                    </button>
+        
+                    <button type="button" onclick="window.location.href = 'Wetscher.html';" style="margin-left: 30px; margin-right: 30px;">
+                        <img src="../Pictures/Placeholder.png" alt="Placeholder" width="350px">
+                        <p>Konstatin Wetscher</p>
+                    </button>
                 
-                            <button type="button" onclick="window.location.href = 'Wetscher.html';" style="margin-left: 30px; margin-right: 30px;">
-                                <img src="../Pictures/Placeholder.png" alt="Placeholder" width="350px">
-                                <p>Konstatin Wetscher</p>
-                            </button>
-                        
-                            <button type="button" onclick="window.location.href = 'Gugerbauer.html';">
-                                <img src="../Pictures/Placeholder.png" alt="Placeholder" width="350px">
-                                <p>Clemens Gugerbauer</p>
-                            </button>
-                        </div>
-                    </div>
+                    <button type="button" onclick="window.location.href = 'Gugerbauer.html';">
+                        <img src="../Pictures/Placeholder.png" alt="Placeholder" width="350px">
+                        <p>Clemens Gugerbauer</p>
+                    </button>
                 </div>
             </div>
+
         </div>
     </body> 
 </html>
-
-<script>
-    function sizeContent(){
-        var newHeight = $("html").height()-50 + "px";
-        $(".wrapperFullSize").css("min-height", newHeight);
-        console.log('Bildschrimhöhe wird abgerafgt!');
-    }
-</script>
-
-<script>
-    $(document).ready(function()
-    {
-        sizeContent();
-        $(window).resize(sizeContent);
-    });
-</script>
