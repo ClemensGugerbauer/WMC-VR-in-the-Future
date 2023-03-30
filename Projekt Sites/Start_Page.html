@@ -18,20 +18,36 @@
 
     <title>VR in the future</title>
     <link rel="icon"  href="../Pictures/Favicon.png">
+
+    <script>
+      function setNavbarPosition() {
+        let navbar = document.querySelector('.navbar');
+        let navbarHeight = navbar.offsetHeight;
+        window.addEventListener('scroll', function() 
+        {
+          if (window.pageYOffset >= navbarHeight) 
+          {
+            navbar.classList.add('navbar-hidden');
+          } else
+          {
+            navbar.classList.remove('navbar-hidden');
+          }
+        });
+      }
+    </script>
   </head>
 
-  <body style="background-image: url('../Pictures/Testpicture.jpg'); background-repeat: no-repeat; background-size:cover; z-index: 0;">
+  <body style="background-image: url('../Pictures/Testpicture.jpg'); background-repeat: no-repeat; background-size:cover; z-index: 0; "onload="setNavbarPosition()">
  
-    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top" style="background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);border-radius: 0%; margin-bottom: 0%;position: -webkit-sticky;animation-name: rainbow; animation: rainbow 15s ease infinite; background-size: 400% 400%;box-shadow:0px 10px 5px rgba(0, 0, 0, 0.461); z-index: 2;">
-      <img src="../Pictures/vrinthefuturelogo.png" alt="" height="130" width="220" style="margin-left: 30px;" >
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" style="background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);border-radius: 0%; margin-bottom: 0%; position: -webkit-sticky-top;top:0; animation-name: rainbow; animation: rainbow 15s ease infinite; background-size: 400% 400%;box-shadow:0px 10px 5px rgba(0, 0, 0, 0.461); z-index: 2;">
+      <img src="../Pictures/vrinthefuturelogo.png" alt="" height="130px" width="220px" style="margin-left: 30px;" >
       <a class="nav-item nav-link" onclick="window.location.href = 'Start_Page.html';" id="navbarStyle">Home<span class="sr-only">(current)</span></a>
       <a class="nav-item nav-link" onclick="window.location.href = 'technicalDetails.html';" id="navbarStyle">Technische Daten</a>
       <a class="nav-item nav-link" onclick="window.location.href = 'history.html';" id="navbarStyle">Geschichte</a>
       <a class="nav-item nav-link" onclick="window.location.href = 'development.html';" id="navbarStyle">Entwicklungen</a>
-      <a class="nav-item nav-link" onclick="window.location.href = 'benefits.html';"id="navbarStyle"">Vorteile</a>
+      <a class="nav-item nav-link" onclick="window.location.href = 'benefits.html';" id="navbarStyle">Vorteile</a>
       <a class="nav-item nav-link" onclick="window.location.href = 'aboutUs.html';" id="navbarStyle">Über uns</a>
       </a>
-
     </nav>
 
     <div id="info-box">
