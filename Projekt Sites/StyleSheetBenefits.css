@@ -1,0 +1,135 @@
+@keyframes rainbow 
+{   
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+#ar-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+@font-face{
+    src: url('../fontStyle/fz-shion-regular/Shion-Regular.otf');
+    font-family: 'AboutUsFontStyle';
+}
+.navbar {
+    transition: transform 0.5s ease-out;
+}
+.navbar-hidden {
+    transform: translateY(-100%);
+}
+.btn {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  transition: 0.2s;
+}
+
+.btn:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.btn:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(30, 30, 30);
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.btn:hover{
+    border-radius: 0%; 
+    color: rgb(217, 217, 217);
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 110%;
+        transition: 0.2s;
+}
+
+#benefitsh1{
+    color: rgba(0, 0, 0, 0.415);
+    text-decoration: underline;
+}
+#info-box {
+    position: -webkit-sticky;
+    border: 1px hidden;
+    background: linear-gradient(to right, rgba(46, 46, 203, 0) , rgba(0, 0, 0, 0.808));
+    padding: 1.5%;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-top: 0%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+      
+#navbarStyle{
+    font-size: 20px;
+    margin-right: 3%;
+    margin-left: 3%;
+    color: rgb(255, 255, 255);
+}
+footer{
+    height: 90px;
+    width: auto;
+    margin-top: 3%;
+    padding: 1%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
