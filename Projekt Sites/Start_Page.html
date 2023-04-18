@@ -35,25 +35,27 @@
         });
       }
       function fadeOutEffect() {
-    var fadeTarget = document.getElementById("target");
-    var fadeEffect = setInterval(function () {
-        if (!fadeTarget.style.opacity) {
-            fadeTarget.style.opacity = 1;
-        }
-        if (fadeTarget.style.opacity > 0) {
-            fadeTarget.style.opacity -= 0.1;
-        } else {
-            clearInterval(fadeEffect);
-        }
-        
-    }, 40);
-  }
+  var target = document.getElementById("target");
+  var video = document.getElementById("my-video");
+  var opacity = 1;
+  var secondOpacity = 0;
+  var interval = setInterval(function () {
+    if (opacity > 0) {
+      opacity -= 0.1;
+      secondOpacity += 0.1
+      target.style.opacity = opacity;
+      video.style.opacity = secondOpacity;
+    } else {
+      clearInterval(interval);
+    }
+  }, 40);
+}
 
     </script>
     
   </head>
 
-  <body style=" background-repeat: no-repeat;; background-size:cover; z-index: 0; "onload="setNavbarPosition()">
+  <body style=" background-repeat: no-repeat;; background-size:cover; z-index: 0; background-color: black; "onload="setNavbarPosition()">
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" style="background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);border-radius: 0%; margin-bottom: 0%; position: -webkit-sticky;top:0; animation-name: rainbow; animation: rainbow 15s ease infinite; background-size: 400% 400%;box-shadow:0px 10px 5px rgba(0, 0, 0, 0.461); z-index: 2;">
       <button onclick="fadeOutEffect(), videoOnLoad()" type="submit" style="background-color: rgba(0, 0, 0, 0); border: 0cm;">
@@ -67,11 +69,10 @@
       <a class="nav-item nav-link" onclick="window.location.href = 'aboutUs.html';" id="navbarStyle">Über uns</a>
       </a>
     </nav>
+    <video style="position:absolute; object-fit: cover; margin-top: -20%; padding-left: 18%; opacity: 0%;" id="my-video" autoplay muted loop>
+      <source src="../Pictures/ARIntro.mp4" type="video/mp4">
+    </video>
     <div id="target">
-
-      <video id="my-video" autoplay muted loop>
-        <source src="../Pictures/ARIntro.mp4" type="video/mp4">
-      </video>
 
       <div id="info-box">
         <video id="background-video" autoplay loop muted poster="..\Pictures\My Movie.mp4">
