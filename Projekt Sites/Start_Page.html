@@ -45,16 +45,18 @@
         } else {
             clearInterval(fadeEffect);
         }
+        
     }, 40);
-}
+  }
+
     </script>
     
   </head>
 
-  <body style=" background-repeat: no-repeat; background-size:cover; z-index: 0; "onload="setNavbarPosition()">
+  <body style=" background-repeat: no-repeat;; background-size:cover; z-index: 0; "onload="setNavbarPosition()">
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" style="background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);border-radius: 0%; margin-bottom: 0%; position: -webkit-sticky;top:0; animation-name: rainbow; animation: rainbow 15s ease infinite; background-size: 400% 400%;box-shadow:0px 10px 5px rgba(0, 0, 0, 0.461); z-index: 2;">
-      <button onclick="fadeOutEffect()" type="submit" style="background-color: rgba(0, 0, 0, 0); border: 0cm;">
+      <button onclick="fadeOutEffect(), videoOnLoad()" type="submit" style="background-color: rgba(0, 0, 0, 0); border: 0cm;">
         <img src="../Pictures/vrinthefuturelogo.png" alt="" height="130px" width="220px" style="margin-left: 30px;" />
       </button>
       <a class="nav-item nav-link" onclick="window.location.href = 'Start_Page.html';" id="navbarStyle">Home<span class="sr-only">(current)</span></a>
@@ -66,6 +68,11 @@
       </a>
     </nav>
     <div id="target">
+
+      <video id="my-video" autoplay muted loop>
+        <source src="../Pictures/ARIntro.mp4" type="video/mp4">
+      </video>
+
       <div id="info-box">
         <video id="background-video" autoplay loop muted poster="..\Pictures\My Movie.mp4">
           <source src="..\Pictures\My Movie.mp4" type="video/mp4">
