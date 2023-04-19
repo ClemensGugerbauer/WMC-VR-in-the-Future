@@ -42,6 +42,7 @@
   var secondOpacity = 0;
   var wait = 5;
   video.style.top = 800 + "px";
+  video.style.transform = "rotate(0deg)";
   var interval = setInterval(function () {
     moveVideoToTop(video);
     if (opacity > 0) {
@@ -69,7 +70,7 @@ function fadeInEffect() {
   var interval = setInterval(function () {
     moveVideoToBottom(video);
     if (wait > 0){
-      wait -= 0.1;
+      wait -= 0.5;
     }
     if (opacity < 1 && wait < 1) {
       opacity += 0.1;
@@ -86,17 +87,17 @@ function fadeInEffect() {
 
 function moveVideoToBottom(video) {
   var currentPosition = parseInt(video.style.top); // get current top position
-  var move = currentPosition/ 30;
+  var move = currentPosition/ 25;
   var newPosition = currentPosition + move; // move the video 10 pixels to the left
   video.style.top = newPosition + "px"; // set the new left position in pixels
-  video.style.transform += "rotate(2deg)";
+  video.style.transform += "rotate(0.1deg)";
 }
 function moveVideoToTop(video) {
   var currentPosition = parseInt(video.style.top) || 900; // get current top position
-  var move = currentPosition / 25;
+  var move = currentPosition / 20;
   var newPosition = currentPosition - move; // move the video 10 pixels to the left
   video.style.top = newPosition + "px"; // set the new left position in pixels
-  video.style.transform += "rotate(2deg)";
+  video.style.transform += "rotate(0.1deg)";
 }
     </script>
     
