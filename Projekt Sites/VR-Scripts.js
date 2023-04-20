@@ -78,4 +78,3 @@ function fadeOutEffect() {
     video.style.top = newPosition + "px"; // set the new  position in pixels
     video.style.transform += "rotate(0.2deg)";
   }
-      
