@@ -6,186 +6,206 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta author="Clemens Gugerbauer, Konstatin Wetscher, Felix Kohlböck">
 
+    <!-- Bootstrap CSS files -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap-theme.min.css">
+
     <link rel="stylesheet" href="../css/bootstrap-theme.css">
     <link rel="stylesheet" href="../css/bootstrap-theme.css.map">
     <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="../css/bootstrap-theme.min.css.map">
     <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css.map">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <link rel="stylesheet" href="StyleSheet.CSS">
-    <script src="VR-Scripts.js"></script>
+    <!-- Your other CSS files -->
+    <link rel="stylesheet" href="StyleSheetBenefits.css">
+    <link rel="stylesheetCSS" href="StyleSheet.CSS">
 
-    <title>VR in the future</title>
+    <title>Technische Daten - VR in the future</title>
     <link rel="icon" href="../Pictures/Favicon.png">
 
-    <style>
-        footer {
-            position: sticky;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            background-color: red;
-            color: white;
-            text-align: center;
-            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-            border-radius: 0%;
-            margin-bottom: 0%;
-            position: -webkit-sticky;
-            animation-name: rainbow;
-            animation: rainbow 15s ease infinite;
-            background-size: 400% 400%;
-            box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.461)
-        }
-    </style>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="VR-Scripts.js"></script>
+
 </head>
 
-<body>
-    <div>
-        <div>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top"
-                style="background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);border-radius: 0%; margin-bottom: 0%;position: -webkit-sticky;animation-name: rainbow; animation: rainbow 15s ease infinite; background-size: 400% 400%;box-shadow:0px 10px 5px rgba(0, 0, 0, 0.461);">
-                <img src="../Pictures/vrinthefuturelogo.png" alt="" height="130" width="220" style="margin-left: 30px;">
+<body style="background-color: rgb(232, 232, 232);" onload="setNavbarPosition()">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top"
+        style="background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);border-radius: 0%; margin-bottom: 0%; position: -webkit-sticky;top:0; animation-name: rainbow; animation: rainbow 15s ease infinite; background-size: 400% 400%;box-shadow:0px 10px 5px rgba(0, 0, 0, 0.461); z-index: 2;">
+        <img src="../Pictures/vrinthefuturelogo.png" alt="" height="130" width="220" style="margin-left: 30px;">
+        <a class="nav-item nav-link" onclick="window.location.href = 'Start_Page.html';" id="navbarStyle">Home<span
+                class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" onclick="window.location.href = 'technicalDetails.html';"
+            id="navbarStyle">Technische Daten</a>
+        <a class="nav-item nav-link" onclick="window.location.href = 'history.html';" id="navbarStyle">Geschichte</a>
+        <a class="nav-item nav-link" onclick="window.location.href = 'benefits.html';" id="navbarStyle">Vorteile</a>
+        <a class="nav-item nav-link" onclick="window.location.href = 'aboutUs.html';" id="navbarStyle">Über uns</a>
+    </nav>
 
-                <a class="nav-item nav-link" onclick="window.location.href = 'Start_Page.html';"
-                    style="font-size: 20px; margin-right: 3%; margin-left: 3%; color: rgb(255, 255, 255);">Home</a>
-                <a class="nav-item nav-link" onclick="window.location.href = 'technicalDetails.html';"
-                    style="font-size: 20px; margin-right: 3%; margin-left: 3%; color: rgb(255, 255, 255);">Technische
-                    Daten</a>
-                <a class="nav-item nav-link" onclick="window.location.href = 'history.html';"
-                    style="font-size: 20px; margin-right: 3%; margin-left: 3%; color: rgb(255, 255, 255);">Geschichte</a>
-                <a class="nav-item nav-link" onclick="window.location.href = 'benefits.html';"
-                    style="font-size: 20px; margin-right: 3%; margin-left: 3%; color: rgb(255, 255, 255);">Vorteile</a>
-                <a class="nav-item nav-link" onclick="window.location.href = 'aboutUs.html';"
-                    style="font-size: 20px; margin-right: 3%; margin-left: 3%; color: rgb(255, 255, 255);">Über uns</a>
-            </nav>
+    <div style="margin-top: 3%;">
+        <div style="float: right;">
+            <div style="margin-left: -60%;">
+                <div style="border-left-style: solid;  border-color: rgb(159, 159, 159);">
+                    <div style="padding: 10%;">
+                        <div style="font-family: AboutUsFontStyle; font-size: 125%; line-height: 250%;">
+                            <a onclick="scrollToElement('SectionDetails')">Genauere Informationen</br></a>
+                            <a onclick="scrollToElement('SectionInterestiongFacts')">Software</br></a>
+                            <a onclick="scrollToElement('SectionSimlpyEasy')">Einfach Praktisch</br></a>
+                            <a onclick="scrollToElement('SectionInsanePossibilitys')">Krasse Möglichkeiten</br></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    <div id = "contentTD">
+    </div>
+
+    <div style="background-image: radial-gradient(rgba(180, 180, 180, 0.91), rgb(232, 232, 232));">
+        <div style="margin: 3%; margin-right: 30%; margin-left: 10%;">
+            <div style="border-style: none;">
+                <div style="padding: 3%;">
+                    <div style="line-height: 200%; font-size: 145%;">
+                        <p>
+                            Virtual-Reality-Headsets, auch VR-Headsets genannt, sind spezielle Ausgabegeräte, die zur
+                            Schaffung eines immersiven Erlebnisses in virtuellen Welten verwendet werden.
+                            Bekannte Modelle sind Oculus Rift, HTC Vive und CAVE.
+                            Sie nutzen Stereoprojektion, um einen räumlichen Eindruck zu erzeugen, indem sie zwei Bilder
+                            aus unterschiedlichen Perspektiven darstellen und sie mit aktiven oder passiven Technologien
+                            an die Augen liefern.
+                            Es gibt auch Standalone-VR-Headsets, die ohne PC und Stromanschluss funktionieren und somit
+                            kabellos und mobil sind.
+                            Die Interaktion mit der virtuellen Welt erfolgt über spezielle Eingabegeräte wie 3D-Mäuse,
+                            Datenhandschuhe, Flysticks und omnidirektionale Laufbänder.
+                            Einige Systeme ermöglichen die Steuerung über Handgesten oder Knöpfe am Headset.
+                            Eingabegeräte wie das omnidirektionale Laufband erlauben es dem Benutzer, sich im virtuellen
+                            Raum durch reale Bewegungen fortzubewegen.
+                            Der Flystick wird zur Navigation verwendet und sendet die Position über ein optisches
+                            Trackingsystem an das VR-System.
+                            Optische Trackingsysteme können auch Werkzeuge und menschliche Modelle in Echtzeit erfassen
+                            und manipulieren.
+                            Einige Eingabegeräte bieten Force Feedback, um dem Benutzer haptisches Feedback zu geben und
+                            die Orientierung und Durchführung realitätsnaher Simulationen zu verbessern.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="SectionDetails" style="margin: 3%; margin-right: 15%; margin-left: 10%;">
+        <div style="padding: 3%;">
+            <h1 id="benefitsh1">Genauere Informationen</h1>
+            <div style="margin-left: 80%;">
+                <img src="../Pictures/TechnicalDetails1.jpg" style="float: right; border-radius: 1%;" width="500"
+                    alt="Bild konnte nicht geladen werden.">
+            </div>
+            <p style="line-height: 150%; font-size: 145%;">
+                VR-Brillen (Virtual Reality-Brillen) sind Geräte, die entwickelt wurden, um dem Benutzer ein immersives
+                Virtual-Reality-Erlebnis zu bieten. Sie verwenden verschiedene Technologien, um eine virtuelle Umgebung
+                zu erzeugen und dem Benutzer das Gefühl zu vermitteln, sich tatsächlich in dieser Umgebung zu befinden.
+                Die grundlegende Funktionsweise einer VR-Brille besteht darin, dem Benutzer ein stereoskopisches 3D-Bild
+                zu präsentieren, das sich mit seinem Kopf und seinen Bewegungen synchronisiert. Hier sind die
+                Hauptkomponenten und Technologien, die in den meisten VR-Brillen verwendet werden:
+            <ol style="line-height: 150%; font-size: 145%;">
+                <li>Display: Jede VR-Brille verfügt über ein Display für jedes Auge. In der Regel handelt es sich um
+                    kleine, hochauflösende Bildschirme, die direkt vor den Augen platziert sind. Diese Displays zeigen
+                    das virtuelle Bild an, das der Benutzer sehen soll.</li>
+                <li>Optik: Die Optik in VR-Brillen ist darauf ausgelegt, das Bild so zu verzerren und zu vergrößern,
+                    dass es dem Benutzer erscheint, als würde es in einer bestimmten Entfernung im Raum schweben.
+                    Dadurch entsteht ein Gefühl der Tiefe und des räumlichen Bewusstseins.</li>
+                <li>Tracking: Um die Bewegungen des Benutzers zu erfassen und in die virtuelle Umgebung zu übertragen,
+                    verwenden VR-Brillen verschiedene Tracking-Technologien. Die häufigsten Methoden sind Gyroskope,
+                    Beschleunigungsmesser und Magnetometer, die die Kopfbewegungen des Benutzers verfolgen. Einige
+                    fortschrittlichere VR-Systeme bieten auch Positionstracking, um die Position im Raum zu erfassen.
+                </li>
+                <li>Grafikprozessor und Rechenleistung: Um die rechenintensiven grafischen Anforderungen von VR zu
+                    bewältigen, benötigen VR-Brillen leistungsstarke Grafikprozessoren (GPUs) und Rechenleistung. Sie
+                    müssen die virtuelle Umgebung in Echtzeit rendern, um ein flüssiges und immersives Erlebnis zu
+                    bieten. </li>
+                <li>Verbindung mit einem Computer oder einer Konsole: Die meisten VR-Brillen sind mit einem Computer
+                    oder einer Spielekonsole verbunden, die die erforderliche Rechenleistung liefern. Die Verbindung
+                    erfolgt normalerweise über Kabel, aber es gibt auch drahtlose VR-Systeme, die ihre eigene
+                    Rechenleistung haben.</li>
+            </ol>
+            <p style="line-height: 150%; font-size: 145%;">
+                Zusätzlich zu den oben genannten Hauptkomponenten können VR-Brillen auch über Sensoren verfügen, um
+                andere Körperbewegungen wie Handbewegungen oder Körperpositionen zu erfassen. Diese erweiterten
+                Funktionen ermöglichen eine noch immersivere Erfahrung.
+                Insgesamt arbeiten VR-Brillen also durch die Kombination von hochauflösenden Displays, Optik,
+                Tracking-Technologien und leistungsstarker Rechenleistung zusammen, um dem Benutzer ein immersives
+                Virtual-Reality-Erlebnis zu bieten.
+            </p>
+            </p>
+        </div>
+    </div>
+
+    <div id="SectionInterestiongFacts" style="margin-left: 12%; margin-right: 15%;">
         <div>
-            <div">
-                <p>
-                    <h3 style="text-align: center;"> Hardware</h3>
-                        Virtual-Reality-Headsets, auch VR-Headsets genannt, sind spezielle Ausgabegeräte, die verwendet
-                        werden, um
-                        virtuellen Welten ein Gefühl von Immersion zu verleihen.
-                        Bekannte Modelle sind die Oculus Rift, HTC Vive und die CAVE.
-                        Sie nutzen Stereoprojektion, um einen räumlichen Eindruck zu erzeugen, indem sie zwei Bilder aus
-                        unterschiedlichen Perspektiven darstellen und mittels aktiver (z.B: ShutterBrillen) oder passiver
-                        (z.B:
-                        Polfilter / Infitec) Technologien an das jeweilige Auge liefern.
-                        Es gibt auch Standalone-VR-Headsets, die ohne PC und Stromanschluss funktionieren und daher kabellos
-                        und
-                        mobil genutzt werden können.
-                        Interaktion mit der virtuellen Welt erfolgt durch spezielle Eingabegeräte wie 3D-Maus,
-                        Datenhandschuh und
-                        Flystick sowie das omnidirektionale Laufband.
-                        Einige Systeme kommen jedoch ohne externe Eingabegeräte aus und lassen sich über Handgesten oder
-                        Knöpfe am
-                        Headset steuern.
-                        Einige Eingabegeräte, wie das omnidirektionale Laufband, ermöglichen es dem Benutzer, sich im
-                        virtuellen
-                        Raum durch reale Bewegungen zu bewegen.
-                        Der Flystick wird zur Navigation mit einem optischen Trackingsystem genutzt, bei dem
-                        Infrarot-Kameras die
-                        Position im Raum durch Erfassung von Markern am Flystick permanent an das VR-System melden, damit
-                        der
-                        Benutzer sich frei bewegen kann.
-                        Optische Trackingsysteme können auch für die Erfassung von Werkzeugen und kompletten Menschmodellen
-                        verwendet werden, um diese innerhalb des VR-Szenarios in Echtzeit manipulieren zu können.
-                        Einige Eingabegeräte vermitteln dem Benutzer durch Force Feedback eine Rückkopplung auf die Hände
-                        oder
-                        andere Körperteile, was die Orientierung in der virtuellen Welt und die Durchführung realitätsnaher
-                        Simulationen erleichtert.
-                </p>
-            </div>
-            <div id = "carousel">
-                <!-- Carousel -->
-            <div id="demo" class="carousel " data-bs-ride="carousel">
-            
-                <!-- Indicators/dots -->
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                  <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                  <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-                </div>
-              
-                <!-- The slideshow/carousel -->
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="../Pictures//evolving.jpg" alt="evolving" class="d-block w-100">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../Pictures/Placeholder.png" alt="Placeholder" class="d-block w-100">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../Pictures/Funktionsweise-VR-Brille.jpg" alt="Funktionsweise-VR-Brille" class="d-block w-100">
-                  </div>
-                </div>
-              
-                <!-- Left and right controls/icons -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                  <span class="carousel-control-next-icon"></span>
-                </button>
-              </div> 
-            </div>
             <div>
-                    <p>
-                        Zur Erzeugung von virtueller Realität werden spezielle Softwareprogramme benötigt, die komplexe,
-                        dreidimensionale Welten in Echtzeit berechnen können.
-                        Die Bildfrequenz variiert je nach Anwendung. In den 1990er Jahren waren die technischen
-                        Möglichkeiten nicht ausreichend, heute sind sie es aufgrund leistungsfähigerer Hardware.
-                        Für die Modellierung von virtuellen Objekten kommen verschiedene 3D-Programme zum Einsatz,
-                        Autorensysteme sind für die Interaktivität in Simulationen notwendig.
-                        Zur Darstellung von interaktiven, grafischen 3D-Szenen im Internet dient die Computersprache
-                        VRML/X3D sowie WebVR.
-                    </p>
-                </div>
-                <p>
-                <h3 style="text-align: center;"> Software:</h3>
-                Zur Erzeugung von virtueller Realität werden spezielle Softwareprogramme benötigt, die komplexe
-                dreidimensionale Welten berechnen können.
-                Diese Programme müssen mindestens 25 Bilder pro Sekunde in Stereo berechnen, aber abhängig von der
-                Anwendung kann eine höhere Bildrate erforderlich sein.
-                In den 1990er Jahren waren die Technologien für den produktiven Einsatz noch nicht ausreichend, aber in
-                den 2000er Jahren wurde es durch leistungsfähigere Rechner und Grafikprozessoren möglich.
-                Zum Modellieren von virtuellen Objekten gibt es eine Vielzahl von Programmen, z. B. Maya und 3D Studio
-                Max. Um die modellierten Objekte zu interaktiven Simulationen zusammenzusetzen, werden Autorensysteme
-                wie World Tool Kit verwendet.
-                Für die Darstellung von 3D-Szenen im Internet gibt es VRML/X3D und die JavaScript-API WebVR.
-                </p>
-                <div>
-                    <p>
-                    <h3 style="text-align: center;"> Authentizität und Interaktion:</h3>
-                    VR sollte sich für den User so "real" anfühlen wie möglich.
-                    Der User sollte mit der Welt, die ihn umgibt, interagieren können. Egal ob dies ein Werfen und
-                    Greifen eines Steines ist oder das Klettern von Hindernisssen.
-                    </p>
+                <h1 id="benefitsh1">Software</h1>
+                <div style="line-height: 150%; font-size: 145%;">
+                    Zur Erzeugung von virtueller Realität werden spezielle Softwareprogramme benötigt, die komplexe
+                    dreidimensionale Welten berechnen können.
+                    Diese Programme müssen mindestens 25 Bilder pro Sekunde in Stereo berechnen, aber abhängig von der
+                    Anwendung kann eine höhere Bildrate erforderlich sein.
+                    In den 1990er Jahren waren die Technologien für den produktiven Einsatz noch nicht ausreichend, aber
+                    in
+                    den 2000er Jahren wurde es durch leistungsfähigere Rechner und Grafikprozessoren möglich.
+                    Zum Modellieren von virtuellen Objekten gibt es eine Vielzahl von Programmen, z. B. Maya und 3D
+                    Studio
+                    Max. Um die modellierten Objekte zu interaktiven Simulationen zusammenzusetzen, werden
+                    Autorensysteme
+                    wie World Tool Kit verwendet.
+                    Für die Darstellung von 3D-Szenen im Internet gibt es VRML/X3D und die JavaScript-API WebVR.
                 </div>
             </div>
         </div>
     </div>
-        <div>
-            <footer>
-                <p>
-                    Die Seite wurde erstellt um mehr Menschen die Welt von VR-Brillen näher zu bringen.
-                    Egal welches Alter. <br />
 
-                    Entwickler:
-                    <a href="Wetscher.html" class="link-primary" style="color: rgb(41, 41, 214);">Konstantin
-                        Wetscher,</a>
-                    <a href="Gugerbauer.html" class="link-primary" style="color: rgb(41, 41, 214);">Clemens
-                        Gugerbauer,</a>
-                    <a href="Kohlboeck.html" class="link-primary" style="color: rgb(41, 41, 214);">Felix Köhlböck</a>
-            </footer>
+    <div style = "margin-left: 400px; margin-right: 400px; height: 300px; width: 700px" >
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/Pictures/FUNKTIONSWEISE.jpg" alt="Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="/Pictures/TECHNICALDETAILS.jpg" alt="Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="/Pictures/HISTORY1.jpg" alt="Image 3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
     </div>
+
+    <!-- Content after the carousel... -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.carousel').carousel();
+        });
+    </script>
+
 </body>
 
 </html>
