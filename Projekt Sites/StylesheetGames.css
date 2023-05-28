@@ -13,7 +13,7 @@
 }
 
 .button1 {
-  background-color: white; 
+  background-color: rgb(14, 151, 144); 
   color: black; 
   border: 2px solid #4CAF50;
 }
@@ -23,13 +23,14 @@
   color: white;
 }
 
-.button2 {
-  background-color: white; 
-  color: black; 
-  border: 2px solid #008CBA;
-}
-
-.button2:hover {
-  background-color: #008CBA;
-  color: white;
+#info-text {
+  border: 0px solid;
+  border-radius: 18%;
+  border-color: rgb(14, 151, 144);
+  background-color: rgba(0, 0, 0, 0.595);
+  background-size: contain;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 4%;
+  padding-top: 4%;
 }
