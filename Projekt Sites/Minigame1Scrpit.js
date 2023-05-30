@@ -16,16 +16,36 @@ function startVideo() {
 }
 
 video.addEventListener('play', () => {
-  const canvas = faceapi.createCanvasFromMedia(video)
-  document.body.append(canvas)
-  const displaySize = { width: video.width, height: video.height }
-  faceapi.matchDimensions(canvas, displaySize)
+  const canvas = faceapi.createCanvasFromMedia(video);
+  document.body.append(canvas);
+  const displaySize = { width: video.width, height: video.height };
+  faceapi.matchDimensions(canvas, displaySize);
   setInterval(async () => {
-    const detections = await faceapi.detectAllFaces(video, new faceapi.TinyFaceDetectorOptions()).withFaceLandmarks().withFaceExpressions()
-    const resizedDetections = faceapi.resizeResults(detections, displaySize)
-    canvas.getContext('2d').clearRect(0, 0, canvas.width, canvas.height)
-    faceapi.draw.drawDetections(canvas, resizedDetections)
-    faceapi.draw.drawFaceLandmarks(canvas, resizedDetections)
-    faceapi.draw.drawFaceExpressions(canvas, resizedDetections)
-  }, 100)
-})
+    const detections = await faceapi.detectAllFaces(video, new faceapi.TinyFaceDetectorOptions()).withFaceLandmarks().withFaceExpressions();
+    const resizedDetections = faceapi.resizeResults(detections, displaySize);
+    canvas.getContext('2d').clearRect(0, 0, canvas.width, canvas.height);
+    faceapi.draw.drawDetections(canvas, resizedDetections);
+    faceapi.draw.drawFaceLandmarks(canvas, resizedDetections);
+    faceapi.draw.drawFaceExpressions(canvas, resizedDetections);
+
+    // Überprüfe, ob Gesichter erkannt wurden
+    if (resizedDetections.length > 0) {
+      // Extrahiere den ersten erkannten Gesichtsausdruck
+      const expressions = resizedDetections[0].expressions;
+
+      // Erstelle einen String, der den Gesichtsausdruck repräsentiert
+      let emotion = "";
+      for (const [expression, probability] of Object.entries(expressions)) {
+        if (probability > 0.5) {
+          emotion = expression;
+          break;
+        }
+      }
+
+      // Verwende den 'emotion'-String für weitere Verarbeitung
+      console.log("Erkannte Emotion: " + emotion);
+    }
+  }, 100);
+});
+
+
