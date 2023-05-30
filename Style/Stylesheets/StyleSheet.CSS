@@ -174,7 +174,7 @@
 }
 #technical-information {
     border-top: 2px solid white;
-    background-image: url('../Pictures/Hardware.jpg');background-repeat: no-repeat; background-size:cover;
+    background-image: url('../../Pictures/Hardware.jpg');background-repeat: no-repeat; background-size:cover;
     padding: 13%;
 }
 #technical-content {
@@ -191,7 +191,7 @@
 }
 #history-box {
     border-top: 2px solid white;
-    background-image: url('../Pictures/history.jpg');background-repeat: no-repeat; background-size:cover;
+    background-image: url('../../Pictures/history.jpg');background-repeat: no-repeat; background-size:cover;
     padding: 10%;
 }   
 #history-content {
@@ -208,7 +208,7 @@
 }
 #development-box {
     border-top: 2px solid white;
-    background-image: url('../Pictures/evolving.jpg');background-repeat: no-repeat; background-size:cover;
+    background-image: url('../../Pictures/evolving.jpg');background-repeat: no-repeat; background-size:cover;
     padding: 10%;
 }
 #development-content{
