@@ -1,5 +1,13 @@
 # WMC-VR-in-the-Future
 
+
+
+Konstantin Wetcher ist in die Gruppe von Eduard und Benjamin gewechselt.
+
+
+
+
+
 1. Projekt Purpose: 
 - Create a Website about VR in our future. In that website we will describe what will be possible in the future and how VR works at the moment. 
 2. Target user:
@@ -7,7 +15,6 @@
 3. Team members:
 - Felix Kohlböck
 - Clemens Gugerbauer
-- Konstantin Wetscher
 4. Motivation:
 - Teach young and old about Virtual Reality and its possibilites.
 5. Feature-List:
