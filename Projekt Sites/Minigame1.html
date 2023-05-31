@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta author="Clemens Gugerbauer, Konstatin Wetscher, Felix Kohlböck">
 
-
     <link rel="stylesheet" href="../Style/Bootstrap/bootstrap-theme.css">
     <link rel="stylesheet" href="../Style/Bootstrap/bootstrap-theme.css.map">
     <link rel="stylesheet" href="../Style/Bootstrap/bootstrap-theme.min.css">
@@ -25,14 +24,36 @@
         margin: 0;
         padding: 0;
         width: 100%;
-        height: autpo;
+        height: auto;
         display: flex;
         justify-content: center;
         align-items: center;
       }
   
-      canvas {
+      .container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+  
+      #video {
+        position: relative;
+        z-index: 1;
+        margin-right: 20px;
+        width: fit-content;
+      }
+  
+      #TextForEmotion {
         position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        font-size: 24px;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
       }
     </style>
 
@@ -41,12 +62,9 @@
 
 </head>
 <body>
+  <div class="container">
     <video id="video" width="720" height="560" autoplay muted></video>
-
-    <dialog>
-        
-    </dialog>
-
-
+    <p id="TextForEmotion"></p>
+  </div>
 </body>
 </html>
