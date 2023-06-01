@@ -37,7 +37,7 @@ video.addEventListener('play', () => {
       // Erstelle einen String, der den Gesichtsausdruck repräsentiert
       let emotion = "";
       for (const [expression, probability] of Object.entries(expressions)) {
-        if (probability > 0.09) {
+        if (probability > 0.1) {
           emotion = expression;
           AskEmotion(emotion);
           break;
@@ -58,7 +58,7 @@ function AskEmotion(emotion) {
   const textContainer = document.getElementById("TextForEmotion");
 
   if (next == true) {
-    num = Random(1, 6);
+    num = getRandomNumber(1, 4);
     next = false;
   }
 
@@ -70,7 +70,7 @@ function AskEmotion(emotion) {
       startWellDoneTimer(textContainer);
     }
   }
-  if (next == false && num == 2) {
+  else if (next == false && num == 2) {
     textContainer.innerText = "Show me your sad Face";
     if (emotion == 'sad') {
       next = true;
@@ -78,7 +78,7 @@ function AskEmotion(emotion) {
       startWellDoneTimer(textContainer);
     }
   }
-  if (next == false && num == 3) {
+  else if (next == false && num == 3) {
     textContainer.innerText = "Show me your neutral Face";
     if (emotion == 'neutral') {
       next = true;
@@ -86,7 +86,7 @@ function AskEmotion(emotion) {
       startWellDoneTimer(textContainer);
     }
   }
-  if (next == false && num == 4) {
+  else if (next == false && num == 4) {
     textContainer.innerText = "Show me your surprised Face";
     if (emotion == 'surprised') {
       next = true;
@@ -94,7 +94,7 @@ function AskEmotion(emotion) {
       startWellDoneTimer(textContainer);
     }
   }
-  if (next == false && num == 5) {
+  else if (next == false && num == 5) {
     textContainer.innerText = "Show me your angry Face";
     if (emotion == 'angry') {
       next = true;
@@ -102,7 +102,7 @@ function AskEmotion(emotion) {
       startWellDoneTimer(textContainer);
     }
   }
-  if (next == false && num == 6) {
+  else if (next == false && num == 6) {
     textContainer.innerText = "Show me your disgusted Face";
     if (emotion == 'disgusted') {
       next = true;
@@ -123,7 +123,3 @@ function getRandomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function Random() {
-  let num = getRandomNumber(1, 4);
-  return num;
-}

@@ -43,6 +43,8 @@
         z-index: 1;
         margin-right: 20px;
         width: fit-content;
+        border:2px;
+        
       }
   
       #TextForEmotion {
@@ -55,6 +57,65 @@
         color: white;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
       }
+
+
+
+
+
+      #video {
+  position: relative;
+  z-index: 1;
+  margin-right: 20px;
+  width: fit-content;
+}
+
+#video:before {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  padding: 10px;
+  border-radius: 50%; 
+  background: conic-gradient(
+        #ff53bb ,
+        #0000 30deg 120deg,
+        #00f8d3 150deg 180deg,
+        #0000 210deg 300deg,
+        #ff53bb 330deg
+    );
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: intersect;
+}
+
+#video:after {
+  content: "";
+  position: absolute;
+  inset: -100px;
+  background:
+    radial-gradient(200px at left  400px top 150px, #ff53bb 100%, #0000),
+    radial-gradient(200px at right 400px bottom 150px, #00f8d3 100%, #0000);
+  filter: blur(120px);
+  opacity: .5;
+}
+
+#video:before,
+#video:after {
+  transition: .5s, 99999s 99999s transform;
+}
+
+#video:hover:before,
+#video:hover:after {
+  transform: rotate(36000deg);
+  transition: .5s, 600s linear transform;
+}
+
+#video:before {
+  background-color: #222;
+  border: 2px solid #333;
+}
+
     </style>
 
     <title>MiniGame-1</title>
