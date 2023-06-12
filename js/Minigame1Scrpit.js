@@ -67,6 +67,7 @@ async function AskEmotion(emotion) {
     if (emotion == 'happy') {
       next = true;
       textContainer.innerText = "Well done :D";
+      pausecomp(1000);
       startWellDoneTimer(textContainer);
     }
   }
@@ -75,6 +76,7 @@ async function AskEmotion(emotion) {
     if (emotion == 'sad') {
       next = true;
       textContainer.innerText = "Well done :D";
+      pausecomp(1000);
       startWellDoneTimer(textContainer);
     }
   }
@@ -83,6 +85,7 @@ async function AskEmotion(emotion) {
     if (emotion == 'neutral') {
       next = true;
       textContainer.innerText = "Well done";
+      pausecomp(1000);
       startWellDoneTimer(textContainer);
     }
   }
@@ -91,6 +94,7 @@ async function AskEmotion(emotion) {
     if (emotion == 'surprised') {
       next = true;
       textContainer.innerText = "Well done";
+      pausecomp(1000);
       startWellDoneTimer(textContainer);
     }
   }
@@ -99,6 +103,7 @@ async function AskEmotion(emotion) {
     if (emotion == 'angry') {
       next = true;
       textContainer.innerText = "Well done";
+      pausecomp(1000);
       startWellDoneTimer(textContainer);
     }
   }
@@ -107,6 +112,7 @@ async function AskEmotion(emotion) {
     if (emotion == 'disgusted') {
       next = true;
       textContainer.innerText = "Well done";
+      pausecomp(1000);
       startWellDoneTimer(textContainer);
     }
   }
@@ -121,4 +127,12 @@ async function startWellDoneTimer(textContainer) {
 
 function getRandomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function pausecomp(millis)
+{
+    var date = new Date();
+    var curDate = null;
+    do { curDate = new Date(); }
+    while(curDate-date < millis);
 }

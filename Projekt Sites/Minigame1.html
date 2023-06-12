@@ -29,21 +29,12 @@
       height: 100%;
     }
 
-    #video {
-      position: center;
-      z-index: 1;
-      margin-right: 20px;
-      width: fit-content;
-      border: 2px solid white;
-      border-radius: 5px;
-    }
-
     #TextForEmotion {
       position: absolute;
       transform: translate(-50%, -50%);
       z-index: 2;
       font-size: 24px;
-      color: white;
+      color: rgb(78, 61, 61);
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
 
@@ -53,10 +44,10 @@
     <link rel="icon" href="../Pictures/Favicon.png">
 
 </head>
-  <body>
-    <div class="container">
-      <p id="TextForEmotion" style="margin-left: 20%;"></p>
-      <video id="video" width="500" height="400" autoplay muted></video>
-    </div>
+<body>
+  
+    <video id="video" width="500" height="400" autoplay muted></video>
+    <p id="TextForEmotion" style="margin-left: 20%;"></p>
+
   </body>
 </html>
