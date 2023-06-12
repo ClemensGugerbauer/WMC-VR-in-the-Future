@@ -1,12 +1,143 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html> 
+    
+<head> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <meta author="Clemens Gugerbauer, Konstatin Wetscher, Felix Kohlböck">
+
+    <link rel="stylesheet" href="../Style/Bootstrap/bootstrap-theme.css">
+    <link rel="stylesheet" href="../Style/Bootstrap/bootstrap-theme.css.map">
+    <link rel="stylesheet" href="../Style/Bootstrap/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../Style/Bootstrap/bootstrap-theme.min.css.map">
+    <link rel="stylesheet" href="../Style/Bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../Style/Bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../Style/Bootstrap/bootstrap.min.css.map">
+    <script src="../js/tic.js"></script> 
+
+    <title>TikTakToe</title>
+    <link rel="icon"  href="../Pictures/Favicon.png">
+
+    <style>
+
+
+        #b1, #b2, #b3, #b4, #b5, 
+        #b6, #b7, #b8, #b9 {
+            width: 80px;
+            height: 52px;
+            margin: auto;
+            border: 1px solid gray;
+            border-radius: 6px;
+            font-size: 30px;
+            text-align: center;
+        }
+      
+        #but {
+            box-sizing: border-box;
+            width: 95px;
+            height: 40px;
+            border: 1px solid dodgerblue;
+            margin: auto;
+            border-radius: 4px;
+            font-family: Verdana, 
+                Geneva, Tahoma, sans-serif;
+      
+            background-color: dodgerblue;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
     
-</body>
+        #print {
+            font-family: Verdana, 
+                Geneva, Tahoma, sans-serif;
+      
+            color: dodgerblue;
+            font-size: 20px;
+        }
+    
+        #main {
+            text-align: center;
+        }
+      
+        #ins {
+            font-family: Verdana, 
+                Geneva, Tahoma, sans-serif;
+                  
+            color: dodgerblue;
+            font-size: 17px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3px;
+            background-color: rgb(151, 151, 151);
+            height: 50;
+        }
+    </style>
+</head> 
+    
+<body>
+
+    <div style="margin-top: 0%; margin-left: 9%;">
+        <div style="padding: 5%;">
+            <a onclick="window.location.href = 'TwoApplications.html';" class="button button1" style="font-family:Verdana, Geneva, Tahoma, sans-serif">← Zurück</a>
+        </div>
+    </div>
+
+    <div id="main">
+
+        <h1>TIC TAC TOE</h1> 
+    
+        <p id="ins">Spiel startet, wenn platziert wird</p>
+    
+        <input type="text" id="b1" onclick= 
+            "myfunc_3(); myfunc();" readonly> 
+    
+        <input type="text" id="b2" onclick= 
+            "myfunc_4(); myfunc();" readonly> 
+    
+        <input type="text" id="b3" onclick= 
+            "myfunc_5(); myfunc();" readonly> 
+        <br><br> 
+    
+        <input type="text" id="b4" onclick= 
+            "myfunc_6(); myfunc();" readonly> 
+                
+        <input type="text" id="b5" onclick= 
+            "myfunc_7(); myfunc();" readonly> 
+    
+        <input type="text" id="b6" onclick= 
+            "myfunc_8(); myfunc();" readonly> 
+        <br><br> 
+    
+        <input type="text" id="b7" onclick= 
+            "myfunc_9(); myfunc();" readonly> 
+    
+        <input type="text" id="b8" onclick= 
+            "myfunc_10();myfunc();" readonly> 
+    
+        <input type="text" id="b9" onclick= 
+            "myfunc_11();myfunc();" readonly> 
+    
+        <br><br><br>
+
+        <button id="but" onclick="myfunc_2()"> 
+            RESET 
+        </button> 
+    
+        <br><br> 
+        <!-- Space to show player turn -->
+        <p id="print"></p>
+    </div>
+
+    <footer style="font-size: larger;">
+        <h1 style="color: black;">Erklärung:</h1>
+        <div style="padding: 6%;">
+            Auf einem quadratischen, 3×3 Felder großen Spielfeld setzen die beiden Spieler abwechselnd ihr Zeichen (ein Spieler Kreuze, der andere Kreise) in ein freies Feld. Der Spieler, der als Erster drei Zeichen in eine Zeile, Spalte oder Diagonale setzen kann, gewinnt.
+            Der ganze Spaß hat zwar nicht so viel mit VR und AR zu tun, aber das andere ist nicht leicht
+        </div>
+    </footer>
+</body> 
+    
 </html>

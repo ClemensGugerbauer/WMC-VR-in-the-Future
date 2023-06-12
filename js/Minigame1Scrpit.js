@@ -24,6 +24,9 @@ video.addEventListener('play', () => {
     const detections = await faceapi.detectAllFaces(video, new faceapi.TinyFaceDetectorOptions()).withFaceLandmarks().withFaceExpressions();
     const resizedDetections = faceapi.resizeResults(detections, displaySize);
     canvas.getContext('2d').clearRect(0, 0, canvas.width, canvas.height);
+    faceapi.draw.drawDetections(canvas, resizedDetections);
+    faceapi.draw.drawFaceLandmarks(canvas, resizedDetections);
+    faceapi.draw.drawFaceExpressions(canvas, resizedDetections);
     
 
     // Überprüfe, ob Gesichter erkannt wurden
@@ -31,9 +34,6 @@ video.addEventListener('play', () => {
       // Extrahiere den ersten erkannten Gesichtsausdruck
       const expressions = resizedDetections[0].expressions;
 
-    faceapi.draw.drawDetections(canvas, resizedDetections);
-    faceapi.draw.drawFaceLandmarks(canvas, resizedDetections);
-    faceapi.draw.drawFaceExpressions(canvas, resizedDetections);
       // Erstelle einen String, der den Gesichtsausdruck repräsentiert
       let emotion = ""; 
       for (const [expression, probability] of Object.entries(expressions)) {
