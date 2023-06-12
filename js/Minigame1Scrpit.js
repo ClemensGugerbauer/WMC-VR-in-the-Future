@@ -35,7 +35,7 @@ video.addEventListener('play', () => {
     faceapi.draw.drawFaceLandmarks(canvas, resizedDetections);
     faceapi.draw.drawFaceExpressions(canvas, resizedDetections);
       // Erstelle einen String, der den Gesichtsausdruck repräsentiert
-      let emotion = "";
+      let emotion = ""; 
       for (const [expression, probability] of Object.entries(expressions)) {
         if (probability > 0.1) {
           emotion = expression;
@@ -54,7 +54,7 @@ let next = true;
 let num = 0;
 let wellDoneTimer = null;
 
-function AskEmotion(emotion) {
+async function AskEmotion(emotion) {
   const textContainer = document.getElementById("TextForEmotion");
 
   if (next == true) {
@@ -112,7 +112,7 @@ function AskEmotion(emotion) {
   }
 }
 
-function startWellDoneTimer(textContainer) {
+async function startWellDoneTimer(textContainer) {
   clearTimeout(wellDoneTimer); // Zurücksetzen des vorherigen Timers, falls vorhanden
   wellDoneTimer = setTimeout(function () {
     textContainer.innerText = ""; // Leere den TextContainer nach 5 Sekunden
