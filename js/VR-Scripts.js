@@ -14,15 +14,15 @@ function setNavbarPosition() {
     });
 }
 function fadeOutEffect() {
-    var target = document.getElementById("target");
-    var video = document.getElementById("my-video");
+    let target = document.getElementById("target");
+    let video = document.getElementById("my-video");
     let navbar = document.querySelector('.navbar');
-    var opacity = 1;
-    var secondOpacity = 0;
-    var wait = 5;
+    let opacity = 1;
+    let secondOpacity = 0;
+    let wait = 5;
     video.style.top = 800 + "px";
     video.style.transform = "rotate(0deg)";
-    var interval = setInterval(function () {
+    let interval = setInterval(function () {
       moveVideoToTop(video);
       if (opacity > 0) {
         opacity -= 0.1;
@@ -40,13 +40,13 @@ function fadeOutEffect() {
     }, 40);
   }
   function fadeInEffect() {
-    var target = document.getElementById("target");
-    var video = document.getElementById("my-video");
+    let target = document.getElementById("target");
+    let video = document.getElementById("my-video");
     let navbar = document.querySelector('.navbar');
-    var opacity = 0;
-    var secondOpacity = 1;
-    var wait = 5;
-    var interval = setInterval(function () {
+    let opacity = 0;
+    let secondOpacity = 1;
+    let wait = 5;
+    let interval = setInterval(function () {
       moveVideoToBottom(video);
       if (wait > 0){
         wait -= 0.5;
@@ -65,16 +65,16 @@ function fadeOutEffect() {
   }
   
   function moveVideoToBottom(video) {
-    var currentPosition = parseInt(video.style.top); // get current top position
-    var move = currentPosition/ 25;
-    var newPosition = currentPosition + move; 
+    let currentPosition = parseInt(video.style.top); // get current top position
+    let move = currentPosition/ 25;
+    let newPosition = currentPosition + move; 
     video.style.top = newPosition + "px";  // set the new  position in pixels
     video.style.transform += "rotate(0.2deg)";
   }
   function moveVideoToTop(video) {
-    var currentPosition = parseInt(video.style.top) || 900; // get current top position
-    var move = currentPosition / 20;
-    var newPosition = currentPosition - move; 
+    let currentPosition = parseInt(video.style.top) || 900; // get current top position
+    let move = currentPosition / 20;
+    let newPosition = currentPosition - move; 
     video.style.top = newPosition + "px"; // set the new  position in pixels
     video.style.transform += "rotate(0.2deg)";
   }

@@ -60,7 +60,7 @@ async function AskEmotion(emotion) {
   const textContainer = document.getElementById("TextForEmotion");
 
   if(next == true) {
-    num = getRandomNumber(1, 5);
+    num = getRandomNumber(1, 4);
     next = false;
   }
 
@@ -72,54 +72,51 @@ async function AskEmotion(emotion) {
       if (emotion == 'happy') {
         GotRightEmotion(textContainer);
       }
-      break;
-
+    break;
     case 2:
 
       textContainer.innerText = "Show me your sad Face";
       if (emotion == 'sad') {
         GotRightEmotion(textContainer);
       }
-      break;
+    break;
     case 3:
 
       textContainer.innerText = "Show me your neutral Face";
       if (emotion == 'neutral') {
         GotRightEmotion(textContainer);
       }
-      break;
+    break;
     case 4:
 
       textContainer.innerText = "Show me your surprised Face";
       if (emotion == 'surprised') {
         GotRightEmotion(textContainer);
       }
-      break;
+    break;
     case 5:
 
       textContainer.innerText = "Show me your angry Face";
       if (emotion == 'angry') {
         GotRightEmotion(textContainer);
       }
-      break;
+    break;
     case 6:
 
       textContainer.innerText = "Show me your disgusted Face";
       if (emotion == 'disgusted') {
         GotRightEmotion(textContainer);
       }
-      break;
-
-      default:
-        console.log("geht nicht");
+    break;
+    default:
+      console.log("geht nicht");
   }
 }
 
 function GotRightEmotion(textContainer) {
-
+  
   next = true;
   textContainer.innerText = "Well done";
-  pausecomp(4000);
   startWellDoneTimer(textContainer);
 }
 
@@ -132,12 +129,4 @@ async function startWellDoneTimer(textContainer) {
 
 function getRandomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-function pausecomp(millis)
-{
-    var date = new Date();
-    var curDate = null;
-    do { curDate = new Date(); }
-    while(curDate-date < millis);
 }
