@@ -50,79 +50,84 @@ video.addEventListener('play', () => {
   }, 100);
 });
 
+
 let next = true;
 let num = 0;
 let wellDoneTimer = null;
 
 async function AskEmotion(emotion) {
+
   const textContainer = document.getElementById("TextForEmotion");
 
-  if (next == true) {
-    num = getRandomNumber(1, 4);
+  if(next == true) {
+    num = getRandomNumber(1, 5);
     next = false;
   }
 
-  if (next == false && num == 1) {
-    textContainer.innerText = "Show me your happy Face";
-    if (emotion == 'happy') {
-      next = true;
-      textContainer.innerText = "Well done :D";
-      pausecomp(1000);
-      startWellDoneTimer(textContainer);
-    }
-  }
-  else if (next == false && num == 2) {
-    textContainer.innerText = "Show me your sad Face";
-    if (emotion == 'sad') {
-      next = true;
-      textContainer.innerText = "Well done :D";
-      pausecomp(1000);
-      startWellDoneTimer(textContainer);
-    }
-  }
-  else if (next == false && num == 3) {
-    textContainer.innerText = "Show me your neutral Face";
-    if (emotion == 'neutral') {
-      next = true;
-      textContainer.innerText = "Well done";
-      pausecomp(1000);
-      startWellDoneTimer(textContainer);
-    }
-  }
-  else if (next == false && num == 4) {
-    textContainer.innerText = "Show me your surprised Face";
-    if (emotion == 'surprised') {
-      next = true;
-      textContainer.innerText = "Well done";
-      pausecomp(1000);
-      startWellDoneTimer(textContainer);
-    }
-  }
-  else if (next == false && num == 5) {
-    textContainer.innerText = "Show me your angry Face";
-    if (emotion == 'angry') {
-      next = true;
-      textContainer.innerText = "Well done";
-      pausecomp(1000);
-      startWellDoneTimer(textContainer);
-    }
-  }
-  else if (next == false && num == 6) {
-    textContainer.innerText = "Show me your disgusted Face";
-    if (emotion == 'disgusted') {
-      next = true;
-      textContainer.innerText = "Well done";
-      pausecomp(1000);
-      startWellDoneTimer(textContainer);
-    }
+  switch(num) {
+
+    case 1:
+
+      textContainer.innerText = "Show me your happy Face";
+      if (emotion == 'happy') {
+        GotRightEmotion(textContainer);
+      }
+      break;
+
+    case 2:
+
+      textContainer.innerText = "Show me your sad Face";
+      if (emotion == 'sad') {
+        GotRightEmotion(textContainer);
+      }
+      break;
+    case 3:
+
+      textContainer.innerText = "Show me your neutral Face";
+      if (emotion == 'neutral') {
+        GotRightEmotion(textContainer);
+      }
+      break;
+    case 4:
+
+      textContainer.innerText = "Show me your surprised Face";
+      if (emotion == 'surprised') {
+        GotRightEmotion(textContainer);
+      }
+      break;
+    case 5:
+
+      textContainer.innerText = "Show me your angry Face";
+      if (emotion == 'angry') {
+        GotRightEmotion(textContainer);
+      }
+      break;
+    case 6:
+
+      textContainer.innerText = "Show me your disgusted Face";
+      if (emotion == 'disgusted') {
+        GotRightEmotion(textContainer);
+      }
+      break;
+
+      default:
+        console.log("geht nicht");
   }
 }
 
+function GotRightEmotion(textContainer) {
+
+  next = true;
+  textContainer.innerText = "Well done";
+  pausecomp(4000);
+  startWellDoneTimer(textContainer);
+}
+
 async function startWellDoneTimer(textContainer) {
-  clearTimeout(wellDoneTimer); // Zurücksetzen des vorherigen Timers, falls vorhanden
+  clearTimeout(wellDoneTimer);
   wellDoneTimer = setTimeout(function () {
-    textContainer.innerText = ""; // Leere den TextContainer nach 5 Sekunden
-  }, 5000); // Anzeigezeit von 5 Sekunden
+    textContainer.innerText = "";
+  }, 5000);
 }
 
 function getRandomNumber(min, max) {
