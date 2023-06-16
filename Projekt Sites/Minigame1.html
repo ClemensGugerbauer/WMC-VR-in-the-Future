@@ -21,14 +21,6 @@
 
     <style>
 
-    .container {
-      position: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-    }
-
     #TextForEmotion {
       position: absolute;
       transform: translate(-50%, -50%);
@@ -38,6 +30,20 @@
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
 
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    canvas {
+      position: absolute;
+    }
+
     </style>
 
     <title>MiniGame-1</title>
@@ -45,9 +51,12 @@
 
 </head>
 <body>
-  
-    <video id="video" width="500" height="400" autoplay muted></video>
-    <p id="TextForEmotion" style="margin-left: 20%;"></p>
+
+      <video id="video" width="500" height="400" autoplay muted></video>
+      <div style="margin-top: 50px;">
+        <p id="TextForEmotion" style="margin-left: 20%;"></p>
+      </div>
+
 
   </body>
 </html>

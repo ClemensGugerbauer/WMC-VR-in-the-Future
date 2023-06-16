@@ -25,17 +25,13 @@ video.addEventListener('play', () => {
     const detections = await faceapi.detectAllFaces(video, new faceapi.TinyFaceDetectorOptions()).withFaceLandmarks().withFaceExpressions();
     const resizedDetections = faceapi.resizeResults(detections, displaySize);
     canvas.getContext('2d').clearRect(0, 0, canvas.width, canvas.height);
-    
-
-    // Überprüfe, ob Gesichter erkannt wurden
-    if (resizedDetections.length > 0) {
-      // Extrahiere den ersten erkannten Gesichtsausdruck
-      const expressions = resizedDetections[0].expressions;
-
     faceapi.draw.drawDetections(canvas, resizedDetections);
     faceapi.draw.drawFaceLandmarks(canvas, resizedDetections);
     faceapi.draw.drawFaceExpressions(canvas, resizedDetections);
-      // Erstelle einen String, der den Gesichtsausdruck repräsentiert
+    
+    if (resizedDetections.length > 0) {
+      const expressions = resizedDetections[0].expressions;
+
       let emotion = "";
       for (const [expression, probability] of Object.entries(expressions)) {
         if (probability > 0.1) {
@@ -44,8 +40,6 @@ video.addEventListener('play', () => {
           break;
         }
       }
-
-      // Verwende den 'emotion'-String für weitere Verarbeitung
       console.log("Erkannte Emotion: " + emotion);
     }
   }, 100);
@@ -76,13 +70,12 @@ function AskEmotion(emotion) {
 }
 
 function startWellDoneTimer(textContainer) {
-  clearTimeout(wellDoneTimer); // Zurücksetzen des vorherigen Timers, falls vorhanden
+  clearTimeout(wellDoneTimer);
   wellDoneTimer = setTimeout(function () {
-    textContainer.innerText = ""; // Leere den TextContainer nach 5 Sekunden
-  }, 5000); // Anzeigezeit von 5 Sekunden
+    textContainer.innerText = "";
+  }, 5000);
 }
 
 function getRandomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-
