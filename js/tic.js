@@ -1,10 +1,10 @@
-var currentPlayer = 'X';
-var gameOver = false;
+let currentPlayer = 'X';
+let gameOver = false;
 
 function makeMove(cell) {
   if (gameOver) return;
 
-  var cellElement = document.getElementById('cell-' + cell);
+  let cellElement = document.getElementById('cell-' + cell);
   if (cellElement.innerHTML !== '') return;
 
   cellElement.innerHTML = currentPlayer;
@@ -17,7 +17,7 @@ function togglePlayer() {
 }
 
 function checkWin() {
-  var cells = [
+  const cells = [
     [1, 2, 3],
     [4, 5, 6],
     [7, 8, 9],
@@ -29,9 +29,9 @@ function checkWin() {
   ];
 
   for (var i = 0; i < cells.length; i++) {
-    var cell1 = document.getElementById('cell-' + cells[i][0]);
-    var cell2 = document.getElementById('cell-' + cells[i][1]);
-    var cell3 = document.getElementById('cell-' + cells[i][2]);
+    let cell1 = document.getElementById('cell-' + cells[i][0]);
+    let cell2 = document.getElementById('cell-' + cells[i][1]);
+    let cell3 = document.getElementById('cell-' + cells[i][2]);
 
     if (cell1.innerHTML !== '' &&
         cell1.innerHTML === cell2.innerHTML &&
